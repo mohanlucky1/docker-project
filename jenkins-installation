@@ -57,7 +57,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/mohanlucky2/docker-project.git'
+                git branch: 'main', url: 'https://github.com/mohanlucky1/docker-project.git'
             }
         }
         stage('build') {
@@ -110,19 +110,19 @@ services:
       replicas: 3
 
   java:
-    image: ramu478/java
+    image: ramu478/azure
     ports:
       - "82:80"
     volumes:
-      - "javavol"
+      - "azurevol"
     deploy:
       replicas: 3
 
   azure:
-    image: ramu478/python
+    image: ramu478/ds
     ports:
       - "83:80"
     volumes:
-      - "pythonvol"
+      - "dsvol"
     deploy:
       replicas: 3
