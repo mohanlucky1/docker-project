@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/mohanlucky2/docker-project.git'
+                git branch: 'main', url: 'https://github.com/mohanlucky1/docker-project.git'
             }
         }
         stage('build') {
@@ -37,7 +37,7 @@ pipeline {
     stages {
         stage('check') {
             steps {
-                git branch: 'main', url: 'https://github.com/mohanlucky2/docker-project.git'
+                git branch: 'main', url: 'https://github.com/mohanlucky1/docker-project.git'
             }
         }
         stage('stack') {
